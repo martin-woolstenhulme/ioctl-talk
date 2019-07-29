@@ -27,7 +27,7 @@ static ssize_t device_file_read(
    if( *possition + count > g_s_Hello_World_size )
       count = g_s_Hello_World_size - *possition;
 
-   if( copy_to_user(user_buffer, g_s_Hello_World_string + *possition, count) != 0 )
+   if( raw_copy_to_user(user_buffer, g_s_Hello_World_string + *possition, count) != 0 )
       return -EFAULT;   
 
    *possition += count;
