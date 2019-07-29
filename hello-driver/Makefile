@@ -1,8 +1,8 @@
 
-TARGET_MODULE:=hello-driver
+TARGET_MODULE:=ofd
 # If we are running by kernel building system
 ifneq ($(KERNELRELEASE),)
-	$(TARGET_MODULE)-objs := hello-driver.o
+	$(TARGET_MODULE)-objs := ofd.o
 	obj-m := $(TARGET_MODULE).o
 # If we running without kernel build system
 else

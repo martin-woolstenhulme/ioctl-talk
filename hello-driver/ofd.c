@@ -1,4 +1,4 @@
-/* hello-driver.c – Hello World Driver code */
+/* ofd.c – Hello World Driver code */
 #include <linux/module.h>
 #include <linux/version.h>
 #include <linux/kernel.h>
